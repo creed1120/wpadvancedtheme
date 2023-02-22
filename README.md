@@ -1,2 +1,2 @@
 # wpadvancedtheme
-Advanced WP theme using OOP
+Advanced WP theme using OOP and Traits with Singleton design pattern
