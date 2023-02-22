@@ -1,10 +1,10 @@
 <?php
 /**
- * Bootstraps the Theme ( adds all the basic functionality of the theme )
- * 
- * @package wpadvancedtheme
- * 
- */
+* Bootstraps the Theme ( adds all the basic functionality of the theme )
+* 
+* @package wpadvancedtheme
+* 
+*/
 
 namespace WPADVANCEDTHEME\Includes;
 
@@ -18,8 +18,8 @@ class WPADVANCED_THEME {
         Assets::get_instance();
         Menus::get_instance();
 
+        // load the setup_hooks() function below
         $this->setup_hooks();
-
     }
 
     protected function setup_hooks() {
@@ -33,7 +33,6 @@ class WPADVANCED_THEME {
 
     // Theme Functionality setup
     public function theme_setup() {
-
 
 
         add_theme_support( 'title-tag' );

@@ -1,22 +1,21 @@
 <?php
 /**
- * Enqueue Theme Assets
- * 
- * @package wpadvancedtheme
- * 
- */
+* Enqueue Theme Assets
+* 
+* @package wpadvancedtheme
+* 
+*/
 
- namespace WPADVANCEDTHEME\Includes;
+namespace WPADVANCEDTHEME\Includes;
 
 use WPADVANCEDTHEME\Includes\Traits\Singleton;
 
- class Assets {
+class Assets {
     use Singleton;
 
     protected function __construct() {
         // loads all classes
         $this->setup_hooks();
-
     }
 
     protected function setup_hooks() {
@@ -25,7 +24,6 @@ use WPADVANCEDTHEME\Includes\Traits\Singleton;
          */
         add_action( 'wp_enqueue_scripts', [ $this, 'register_styles' ] );
         add_action( 'wp_enqueue_scripts', [ $this, 'register_scripts' ] );
-
     }
 
     // ENQUEUE STYLES
@@ -37,7 +35,6 @@ use WPADVANCEDTHEME\Includes\Traits\Singleton;
         // Enqueue the specific Stylesheet by the handle
         wp_enqueue_style('style-css');
         wp_enqueue_style('bootstrap-css');
-
     }
 
     // ENQUEUE SCRIPTS
@@ -49,4 +46,4 @@ use WPADVANCEDTHEME\Includes\Traits\Singleton;
         wp_enqueue_script('main-js');
         wp_enqueue_script('bootstrap-js');
     }
- }
+}
