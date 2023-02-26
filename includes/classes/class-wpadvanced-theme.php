@@ -43,7 +43,7 @@ class WPADVANCED_THEME {
             'width'                => 400,
             'flex-height'          => true,
             'flex-width'           => true,
-            'unlink-homepage-logo' => true,
+            'unlink-homepage-logo' => false,
         ] );
 
         add_theme_support( 'custom-background' );
