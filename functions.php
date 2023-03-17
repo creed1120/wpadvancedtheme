@@ -19,6 +19,7 @@ if ( ! defined( 'WPADVANCEDTHEME_DIR_URI' ) ) {
 }
 
 require_once WPADVANCEDTHEME_DIR_PATH . '/includes/helpers/autoloader.php';
+require_once WPADVANCEDTHEME_DIR_PATH . '/includes/helpers/template-tags.php';
 
 
 //Get Class Instances

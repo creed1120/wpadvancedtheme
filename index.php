@@ -14,6 +14,8 @@ get_header();
 
         <div class="container">
 
+        <?php get_template_part( 'template-parts/content-test' ); ?>
+
             <?php if ( have_posts() ) : ?>
 
                     <?php if ( is_home() && ! is_front_page() ) ?>
@@ -23,6 +25,7 @@ get_header();
 
                     <div class="row">
                         <?php 
+                            // the WP Loop
                             while ( have_posts() ) : the_post(); ?>
 
                                 <div class="col-lg-4 col-md-6 col-sm-12">
@@ -34,6 +37,7 @@ get_header();
                     <?php else : ?>
                         <?php get_template_part( 'template-parts/content-none' ); ?>
             <?php endif; ?>
+
         </div>
         
     </div>

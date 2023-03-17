@@ -17,6 +17,7 @@ class WPADVANCED_THEME {
         // loads/instantiate all classes
         Assets::get_instance();
         Menus::get_instance();
+        Meta_boxes::get_instance();
 
         // load the setup_hooks() function below
         $this->setup_hooks();
@@ -49,6 +50,14 @@ class WPADVANCED_THEME {
         add_theme_support( 'custom-background' );
 
         add_theme_support( 'post-thumbnails' );
+
+        /**
+         * Register Image Sizes
+         * 
+         */
+        add_image_size(
+            'featured-thumbnail', 350, 233, true
+        );
 
         add_theme_support( 'post-formats', [ 
             'aside',

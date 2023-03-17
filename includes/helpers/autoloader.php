@@ -2,7 +2,7 @@
 /**
  * Autoloader file for theme.
  *
- * @package Aquila
+ * @package wpadvancedtheme
  */
 
 namespace WPADVANCEDTHEME\Includes\Helpers;
