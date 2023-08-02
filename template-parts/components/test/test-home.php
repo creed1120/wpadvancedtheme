@@ -7,7 +7,6 @@
  * ( this file is within the WP Loop )
  */
 
-
 ?>
 
 

@@ -14,7 +14,7 @@ class Assets {
     use Singleton;
 
     protected function __construct() {
-        // loads all classes
+        // loads the class methods below
         $this->setup_hooks();
     }
 
@@ -31,10 +31,12 @@ class Assets {
         // Register Scripts & Styles to call later when needed (like conditionally on a certain page)
         wp_register_style( 'style-css', get_stylesheet_uri(), false, filemtime( WPADVANCEDTHEME_DIR_PATH . '/style.css' ), 'all' );
         wp_register_style( 'bootstrap-css', WPADVANCEDTHEME_DIR_URI . '/assets/src/lib/css/bootstrap.min.css', [], false, 'all' );
+        wp_register_style( 'custom', WPADVANCEDTHEME_DIR_URI . '/assets/css/custom.css', [], false, 'all' );
 
         // Enqueue the specific Stylesheet by the handle
         wp_enqueue_style('style-css');
         wp_enqueue_style('bootstrap-css');
+        wp_enqueue_style('custom');
     }
 
     // ENQUEUE SCRIPTS

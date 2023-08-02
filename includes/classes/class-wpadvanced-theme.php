@@ -14,7 +14,8 @@ class WPADVANCED_THEME {
     use Singleton;
 
     protected function __construct() {
-        // loads/instantiate all classes
+        
+        // loads/instantiates all classes
         Assets::get_instance();
         Menus::get_instance();
         Meta_boxes::get_instance();
